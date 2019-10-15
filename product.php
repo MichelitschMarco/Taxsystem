@@ -24,10 +24,7 @@
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"></rect>
-                        </svg>
+                        <img src="/assets/images/murelli.jpeg" alt="">
                     </div>
                 </div>
             </div>
