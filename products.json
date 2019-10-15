@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "name": "Wasser",
+        "barcode": "1203012",
+        "image": "water.png",
+        "price": 1.0,
+        "taxPercent": 10
+    }
+]
