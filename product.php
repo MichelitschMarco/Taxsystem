@@ -10,65 +10,46 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="bg-light">
     <div class="container">
+        <h1 class="row justify-content-center mt-4 mb-4">Überschrift</h1>
 
-        <p>Barcode: <?php echo $_GET['barcode']; ?></p>
-        <div class="row mt-5">
-            <div class="col-md-8 ml-4 mt-5">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <h3 class="mb-5">Produkt</h3>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img src="/assets/images/murelli.jpeg" alt="">
+        <div class="row" style="">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card" style="width:500px;">
+                        <img class="card-img-top" src="./assets/images/murelli.jpeg" alt="Card image" style="width:30%;">
+                        <div class="card-body">
+                            <h4 class="card-title">ProductName</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                            <div class="price">eine Zahl</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-3 order-md-2 mb-4">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text mx-auto">Kosten</span>
-                </h4>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Produktionskosten</h6>
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card" style="width:500px">
+                        <div class="card-body">
+                            <h4 class="card-title">Kostenrechnung:</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Preis (Brutto): <l>eine Zahl</l>
+                                </li>
+                                <li class="list-group-item" style="padding: .75rem 0rem; padding-right: 1.25rem;"><i class="fas fa-venus text-success mx-2"></i><button type="button" class="btn btn-info" id="theBut">Umsatzsteuer (20%)</button>
+                                    <l class="Umsatzsteuer">eine Zahl</l>
+                                </li>
+                                <li class="list-group-item"><i class="fas fa-gavel text-success mx-2"></i> Preis (Netto): <l>eine Zahl</l>
+                                </li>
+                            </ul>
                         </div>
-                        <span class="text-muted">8,87€</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Transportkosten</h6>
-                        </div>
-                        <span class="text-muted">+2,73€</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Lagerkosten</h6>
-                        </div>
-                        <span class="text-muted">+0,34€</span>
-                    </li>
-
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Umssatzkosten</h6>
-                        </div>
-                        <span class="text-muted">+1,34€</span>
-                    </li>
-
-
-                    <li class="list-group-item d-flex justify-content-between" style='background-color: #2ba6cb;'>
-                        <strong><span>Gesamtpreis</span></strong>
-                        <strong>xxx</strong>
-                    </li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
-
         </div>
 
         <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -81,6 +62,7 @@
         window.jQuery || document.write('<script src="/assets/js/jquery.slim.min.js"><\/script>')
     </script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/buttonClicker.js"></script>
 </body>
 
 </html>
