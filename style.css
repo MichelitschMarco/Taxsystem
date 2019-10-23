@@ -1,0 +1,40 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.price{
+    font-size: 30px;
+    position: relative;
+    float: right;
+    padding-right: 10px;
+}
+ 
+.price::after{
+    content: " €";
+}
+
+.card{
+    transform: translateX(25%);
+}
+
+li{
+    font-size: 20px;
+}
+
+
+l{
+    float:right;
+}
+
+l::after{
+    content: " €";
+}
+
+#theBut{
+    font-size: 20px;
+}
+
+.Umsatzsteuer{
+    display: none;
+}
